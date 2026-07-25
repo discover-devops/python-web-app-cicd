@@ -1,4 +1,4 @@
-from flask import Flask
+ifrom flask import Flask
 import socket
 import os
 
@@ -48,6 +48,7 @@ def home():
     <body>
         <div class="card">
             <h1>Hello from Kubernetes!</h1>
+            <p style="color:#27ae60; font-weight:bold;">Deployed automatically via Jenkins CI/CD Pipeline!</p>
             <p class="label">Served by Pod Hostname</p>
             <p class="value">{hostname}</p>
             <p class="label">Pod IP Address</p>
